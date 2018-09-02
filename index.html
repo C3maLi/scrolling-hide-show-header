@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Scrolling Parallax Effect</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css" />
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+      <a href="#"><img class="logo" src="./assets/imgs/coding.png" alt=""></a>
+      <nav>
+        <ul>
+          <li><a href="#"><span>HOME</span></a></li>
+          <li><a href="#"><span>ABOUT</span></a></li>
+          <li><a href="#"><span>PORTFOLIO</span></a></li>
+          <li><a href="#"><span>SERVICES</span></a></li>
+          <li><a href="#"><span>CONTACT</span></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section class="slide">
+    <div class="caption">
+      <h1>Hide header on scroll down show on scroll up.</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quisquam consequuntur hic vero impedit perferendis,
+        deleniti suscipit quia doloribus quas facere. Autem voluptate, obcaecati accusantium laudantium labore iste blanditiis
+        dignissimos.
+      </p>
+    </div>
+  </section>
+  <section class="content">
+    <div class="container">
+      <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, voluptatem!</h2>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium tempore totam omnis, maxime ea illum perspiciatis impedit
+        est quos amet voluptate voluptates quod, dolores saepe recusandae eius eos dolorem quia quibusdam nulla aperiam harum
+        laborum? Necessitatibus velit praesentium quidem voluptatum optio aperiam accusantium, impedit ea iusto excepturi
+        ipsum commodi, quasi inventore dolorum odio, porro tenetur. Dolorem laudantium eos error, autem accusamus ipsam veniam!
+        Adipisci a quidem molestiae in repudiandae dicta, eius nemo? Corrupti sed commodi repudiandae illo quos. Nulla, sed
+        pariatur accusantium tempore alias maiores illum delectus incidunt perspiciatis veritatis nam vitae nesciunt rerum
+        nihil minus dolorem dignissimos quod mollitia?</p>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium tempore totam omnis, maxime ea illum perspiciatis impedit
+        est quos amet voluptate voluptates quod, dolores saepe recusandae eius eos dolorem quia quibusdam nulla aperiam harum
+        laborum? Necessitatibus velit praesentium quidem voluptatum optio aperiam accusantium, impedit ea iusto excepturi
+        ipsum commodi, quasi inventore dolorum odio, porro tenetur. Dolorem laudantium eos error, autem accusamus ipsam veniam!
+        Adipisci a quidem molestiae in repudiandae dicta, eius nemo? Corrupti sed commodi repudiandae illo quos. Nulla, sed
+        pariatur accusantium tempore alias maiores illum delectus incidunt perspiciatis veritatis nam vitae nesciunt rerum
+        nihil minus dolorem dignissimos quod mollitia?</p>
+    </div>
+  </section>
+  <section class="center-area"></section>
+  <section class="content">
+    <div class="container">
+      <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, voluptatem!</h2>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium tempore totam omnis, maxime ea illum perspiciatis impedit
+        est quos amet voluptate voluptates quod, dolores saepe recusandae eius eos dolorem quia quibusdam nulla aperiam harum
+        laborum? Necessitatibus velit praesentium quidem voluptatum optio aperiam accusantium, impedit ea iusto excepturi
+        ipsum commodi, quasi inventore dolorum odio, porro tenetur. Dolorem laudantium eos error, autem accusamus ipsam veniam!
+        Adipisci a quidem molestiae in repudiandae dicta, eius nemo? Corrupti sed commodi repudiandae illo quos. Nulla, sed
+        pariatur accusantium tempore alias maiores illum delectus incidunt perspiciatis veritatis nam vitae nesciunt rerum
+        nihil minus dolorem dignissimos quod mollitia?</p>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium tempore totam omnis, maxime ea illum perspiciatis impedit
+        est quos amet voluptate voluptates quod, dolores saepe recusandae eius eos dolorem quia quibusdam nulla aperiam harum
+        laborum? Necessitatibus velit praesentium quidem voluptatum optio aperiam accusantium, impedit ea iusto excepturi
+        ipsum commodi, quasi inventore dolorum odio, porro tenetur. Dolorem laudantium eos error, autem accusamus ipsam veniam!
+        Adipisci a quidem molestiae in repudiandae dicta, eius nemo? Corrupti sed commodi repudiandae illo quos. Nulla, sed
+        pariatur accusantium tempore alias maiores illum delectus incidunt perspiciatis veritatis nam vitae nesciunt rerum
+        nihil minus dolorem dignissimos quod mollitia?</p>
+    </div>
+  </section>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script>
+    var header = $('header'),
+      $window = $(window),
+      hide = 50;
+    $window.on('scroll', function (e) {
+      header.toggleClass('hide', $window.scrollTop() > hide);
+      hide = $window.scrollTop();
+    })
+  </script>
+</body>
+
+</html>

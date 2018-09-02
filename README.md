@@ -1,1 +1,1 @@
-# scrolling-hide-show-header
+# Scrolling hide show header
